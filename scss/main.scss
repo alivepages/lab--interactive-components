@@ -1,0 +1,55 @@
+
+@import "./imports/_normalize.scss";
+// Don't touch
+@import "./imports/_form-exercise.scss";
+
+body{
+  font-family: sans-serif;
+}
+*{ box-sizing: border-box }
+
+img {
+   width: 100%;
+   display: block;
+}
+
+#app-container{
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+ul.tabs {
+  display: flex;
+  align-content: stretch;
+  margin: 0;
+  padding: 0;
+  li {
+    flex-grow: 1;
+    list-style-type: none;
+    border-right: 1px solid white;
+    margin: 0;
+    padding: 40px 0;
+    width: 25%;
+    text-align: center;
+    background-color: #009CD6;
+    color: #FFF;
+    font-weight: bold;
+    cursor: initial;
+    &:hover {
+      background-color: #C90062;
+    }
+  }
+}
+
+.content {
+  border: 1px solid black;
+  display: none;
+  padding: 20px;
+  &.active{
+    display: block;
+  }
+  hr {
+    color: #ccc;
+    margin: 30px 0;
+  }
+}
